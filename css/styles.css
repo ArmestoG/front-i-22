@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  background-image: url(../img/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: 50rem -8rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: #b3b2b7;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #232c51;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #232c51;
+}
+
+.botonNaranja {
+  background-color: #f25f3a;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  border-width: 0px;
+  cursor: pointer;
+  cursor: hand;
+  margin: 1rem;
+}
+
+.botonNaranja:hover {
+  opacity: .75;
+  transition: opacity .25s;
+
+}
+
+.botonNaranja:active {
+  transform: translate(-.1rem, .1em);
+}
+
+
+/*---------------------------------header-----------------------------*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4.6875em;
+  padding-bottom: 4.6875em;
+  margin: auto;
+}
+
+header nav label,
+nav input {
+  display: none;
+}
+
+
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  color: #232c51;
+}
+
+header nav ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+header nav ul li:hover {
+  color: #8f94a7;
+}
+
+/*---------------------------------home-----------------------------*/
+
+
+main section.home {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section.home img {
+  max-width: 100vw;
+}
+
+main section.home div {
+  max-width: 50vw;
+}
+
+main section.home h1 {
+  font-weight: 700;
+  font-size: 58px;
+  color: #232c51;
+  margin: 1rem;
+}
+
+/*---------------------------------sobreNosotros-----------------------------*/
+
+main section.sobreNosotros {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: top;
+
+}
+
+main section.sobreNosotros h2 {
+  text-align: left;
+  margin: 1rem;
+}
+
+main section.sobreNosotros p {
+  text-align: left;
+}
+
+
+
+main section.sobreNosotros ol {
+  list-style-type: none;
+  counter-reset: cont;
+  margin: 1em;
+}
+
+main section.sobreNosotros ol li {
+  counter-increment: cont;
+}
+
+main section.sobreNosotros ol li::before {
+  display: inline-flex;
+  float: inline-start;
+  flex-wrap: wrap-reverse;
+  content: "0" counter(cont);
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f25f3a;
+  padding: .75rem 1.5rem;
+  border-radius: 2rem;
+  margin-right: 1.5rem;
+}
+
+
+main section.sobreNosotros ol li p,main section.sobreNosotros ol li h4 {
+  display: inline-flex;
+  text-align: start;
+}
+
+/*---------------------------------sobreNosotros-----------------------------*/
+
+main section.testimonios {
+  text-align: center;
+
+}
+
+main section.testimonios h2 {
+  padding: 4.5rem;
+}
+
+main section.testimonios div {
+  display: flex;
+
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+main section.testimonios article.card {
+  position: relative;
+  margin: .5em;
+  background-color: #f9f9f9;
+}
+
+main section.testimonios article.card::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  height: 20%;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+
+main section.testimonios div article img {
+  position: relative;
+  z-index: 999;
+}
+
+main section.testimonios article p {
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/*---------------------------------finalNaranja-----------------------------*/
+
+main section.final {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f25f3a;
+  padding: 3.75rem 0;
+}
+
+main section.final h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 1rem;
+}
+
+main section.final button.botonNaranja {
+  background-color: #ffffff;
+  color: #f25f3a;
+  border-radius: 2rem;
+}
+
+/*---------------------------------footer-----------------------------*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #1d1e25;
+  color: #ffffff;
+  padding: 3rem;
+}
+
+
+footer div.manage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer section.rrss {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer section.lista {
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  font-weight: 400px;
+  line-height: 1.5rem;
+}
+
+
+footer section.signup {
+  display: flex;
+}
+
+footer input[type=email] {
+  border-radius: 2rem;
+  font-weight: 700;
+  color: #232c51;
+  border: none;
+  padding: 1rem;
+}
+
+footer input[type=email]:invalid {
+  color: crimson;
+}
+
+footer span {
+  text-align: end;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 18px;
+  color: #8c8c94;
+  width: 100%;
+  padding: 1rem
+}
+
+footer a:hover {
+  color: #f25f3a;
+  transition: color .25s;
+}
+
+
+
+@media (max-width: 411px) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header button {
+    display: none;
+  }
+
+  header nav {
+    align-items: baseline;
+  }
+
+  header nav label {
+    display: block;
+
+    cursor: pointer;
+  }
+
+  header nav ul {
+    position: fixed;
+    align-items: flex-start;
+    color: #ffffff;
+    flex-direction: column;
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+    transition: .25s ease-in-out;
+    padding: .5rem;
+    right: 10.4rem;
+    gap: .35rem;
+  }
+
+  header nav ul li {
+    padding: 0px;
+  }
+
+  header a:hover {
+    color: #f25f3a;
+  }
+
+  header nav input:checked+ul {
+    background-color: #232c51;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    border-radius: .5rem;
+  }
+
+
+  main section.home {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: min-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  main section.home div {
+    max-width: 100vw;
+  }
+
+  main section.home h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #232c51;
+    margin: 1rem;
+    ;
+  }
+
+  main section.home p {
+    margin: 1rem;
+  }
+
+  main section.sobreNosotros {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section.sobreNosotros h2,
+  p {
+    text-align: center;
+  }
+
+  main section.sobreNosotros ol li::before {
+    margin-right: 0px;
+  }
+
+
+  main section.sobreNosotros ol li h4 {
+    background-color: #ffefea;
+    padding: .75rem .75rem;
+  }
+
+  main section.testimonios {
+    text-align: center;
+    margin: 0px;
+
+  }
+
+  main section.testimonios h2 {
+    padding: 4rem 0rem;
+  }
+
+  main section.testimonios div {
+    height:max-content;
+  }
+
+
+  main section.testimonios div > article.card {
+    position:absolute;
+  }
+
+  @keyframes display {
+    0% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    35% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+  }
+
+  main section.testimonios div > article.card {
+    opacity: 0;
+    margin-bottom: 10rem;
+    animation:display infinite 18s ;
+  }
+  
+  main section.testimonios article.card:nth-child(1) {
+    animation-delay:6s;
+  }
+  main section.testimonios article.card:nth-child(2) {
+    animation-delay: 12s;
+  }
+
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  footer div.manage {
+    flex-direction: column-reverse;
+    margin: 1rem;
+  }
+
+  footer section.rrss {
+    margin: 1rem;
+  }
+
+  footer .botonNaranja {
+    margin: 0rem;
+  }
+
+  footer section.signup {
+    margin: 2rem 0rem;
+  }
+
+  footer span {
+    text-align: center;
+    order: -1;
+  }
+
+}
